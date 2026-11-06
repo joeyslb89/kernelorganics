@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() { return request.auth != null && request.auth.token.email in ['josephabouatme@gmail.com']; }
+    match /site/{doc} { allow read: if true; allow write: if isAdmin(); }
+    match /orders/{id} {
+      allow create: if request.resource.data.keys().hasAll(['n','p','a','items','total']) && request.resource.data.status == 'new' && request.resource.data.n.size() < 200 && request.resource.data.items.size() < 60;
+      allow read, update, delete: if isAdmin();
+    }
+    match /messages/{id} {
+      allow create: if request.resource.data.keys().hasAll(['n','p']) && request.resource.data.status == 'new' && request.resource.data.n.size() < 200;
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}
