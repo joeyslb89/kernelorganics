@@ -1,22 +1,19 @@
-{
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  },
-  "firestore": {
-    "rules": "firestore.rules"
-  },
-  "storage": {
-    "rules": "storage.rules"
-  },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default"
-    }
-  ]
-}
+   {
+     "hosting": {
+       "public": ".",
+       "ignore": [
+         "firebase.json",
+         "**/.*",
+         "**/node_modules/**",
+         "functions/**",
+         "*.rules",
+         "README.md",
+         "update.ps1",
+         "package.json",
+         "package-lock.json"
+       ]
+     },
+     "firestore": { "rules": "firestore.rules" },
+     "storage": { "rules": "storage.rules" },
+     "functions": [{ "source": "functions", "codebase": "default" }]
+   }
