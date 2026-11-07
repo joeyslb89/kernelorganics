@@ -51,5 +51,5 @@ DEF.faq=[{n:'How do I order?',d:'Add products to your basket, open the basket, f
 for(const k of ['home.freeh','ing.freeh','ing.note','find.h','find.p','contact.h','contact.p','find.waze'])delete DEF.texts[k];
 Object.assign(DEF.texts,{'visit.h':'Visit us & get in touch','visit.p':'Meet Kernel at the market, in selected stores and at our boutique & atelier, or write to us: Rita answers personally. Customized products are welcome too.','visit.placesh':'Where to find us','visit.formh':'Write to us','visit.faqh':'Good to know','home.ingeye':'What goes in'});
 DEF.texts['well.cta']='Ask us a question';
-DEF.images={};DEF.zones=[{n:'Beirut',f:0},{n:'Outside Beirut',f:0}];
+DEF.images={};DEF.rules=[];DEF.zones=[{n:'Beirut',f:0},{n:'Outside Beirut',f:0}];
 window.KDATA={DEF,mk};})();

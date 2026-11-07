@@ -38,3 +38,9 @@ Admin > Delivery fees: add your areas and a fee for each. Customers pick their a
 1. Admin > Settings > **Send a test email**: it shows the exact error (for example "Invalid login" means the Gmail App password is wrong).
 2. Each order and message in the admin shows an email status line (sent, error with the reason, or skipped when the customer gave no email).
 3. Fix the secret with `firebase functions:secrets:set SMTP_PASS`, then `firebase deploy --only functions`. Check the spam folder too.
+
+## Delivery rules (by order total)
+Admin > Delivery rules: each rule has an area (or All areas), an order-total range (from / up to), and a fee that is a fixed amount, a percentage of the order, or free. Example: under 50 = 4; 50 to 100 = 3%; 100 and over = free. Area-specific rules win over "All areas". If no rule matches, the area's base fee (Delivery areas) is used.
+
+## Admin
+`admin.html` is a separate back office (sidebar, no website header). It is not linked from the public site; bookmark it.
