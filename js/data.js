@@ -18,7 +18,7 @@ Face Foam Cleanser|22|Face Care|Soap-, sulfate- and fragrance-free gel with orga
 const slug=s=>String(s).toLowerCase().replace(/[^a-z0-9]/g,'');
 const mk=r=>r.split('\n').map(l=>l.split('|')).filter(a=>a[0]&&a[0].trim()).map(a=>({id:slug(a[0])||String(Date.now()),n:a[0].trim(),p:+a[1]||0,c:(a[2]||'Face Care').trim(),d:(a[3]||'').trim(),img:''}));
 const DEF={
-set:{handle:'kernelorganics',phone:'+961 3 069 152',email:'ritatekle@hotmail.com',addr:'Furn el Chebbak, Lebanon',fee:0,free:0,currency:'$'},
+set:{handle:'kernelorganics',phone:'+961 3 069 152',email:'ritatekle@hotmail.com',addr:'Furn el Chebbak, Lebanon',fee:0,free:0,currency:'$',footBg:'#3b221d',footAcc:''},
 texts:{
 'home.eyebrow':'Handmade organic skincare','home.h1':'Skin care that feels like a celebration.','home.p':'Natural formulas, handcrafted with love by Rita for your skin, hair and body. Never put on your skin what you wouldn’t put in your mouth.','home.badge':'🌿 100% natural · Cash on delivery',
 'home.shopeye':'The shop','home.shoph':'Loved favourites','home.shopp':'A little taste of the ritual. Choose your products, fill in your details and pay in cash when your order arrives.',

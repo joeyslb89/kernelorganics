@@ -119,3 +119,5 @@ header{background:var(--paper)!important;-webkit-backdrop-filter:none;backdrop-f
 .bk{align-items:start}.fcard{position:relative}
 
 .cphoto{background-position:center 20%;min-height:230px}
+
+.ft{background:var(--fbg,#3b221d);color:var(--ffg,#f3e9e2)}.ft h4{color:var(--fhd,#f2b5c3)}.ft a,.ft p{color:var(--ffg,#f3e9e2)}.ft a:hover{color:var(--ffg,#fff);text-decoration:underline}.ft .fl{filter:var(--flogo,brightness(0) invert(1))}.fbar{border-top-color:var(--fln,rgba(255,255,255,.16));color:var(--fsf,#d3c3ba)}.ft .fig{color:#fff;text-decoration:none}
