@@ -137,3 +137,5 @@ body.pm-open{overflow:hidden}.pm{position:fixed;inset:0;z-index:80;background:rg
 
 .card[data-pid]{display:flex;flex-direction:column}.card[data-pid] .in{display:flex;flex-direction:column;flex:1}.card[data-pid] .row{margin-top:auto}
 .card .cl{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.card[data-pid] h3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.card .rm{display:block;color:var(--pink);font-size:13px;letter-spacing:.04em;margin:-8px 0 14px}
+
+.from{font:400 12px Jost;color:var(--soft)}.pm-opt{margin:6px 0 14px}
