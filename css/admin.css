@@ -31,3 +31,5 @@ details.ord summary{cursor:pointer;display:flex;align-items:center;gap:10px;flex
 .gals{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}.gth{position:relative}.gth img{width:64px;height:64px;object-fit:cover;border-radius:10px;display:block}.gth button{position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:50%;border:0;background:var(--pink);color:#fff;cursor:pointer;font-size:13px;line-height:1}.gadd{display:grid;place-items:center;width:64px;height:64px;border:1.5px dashed var(--line);border-radius:10px;font-size:12px;color:var(--soft);cursor:pointer}
 
 .vrows{display:grid;gap:8px;margin-top:6px}.vr{display:grid;grid-template-columns:1fr 140px 34px;gap:8px;align-items:center}.vr .del{height:34px}
+
+.rw2{padding:7px 0;border-top:1px solid var(--line);font-size:14px}
