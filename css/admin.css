@@ -33,3 +33,5 @@ details.ord summary{cursor:pointer;display:flex;align-items:center;gap:10px;flex
 .vrows{display:grid;gap:8px;margin-top:6px}.vr{display:grid;grid-template-columns:1fr 140px 34px;gap:8px;align-items:center}.vr .del{height:34px}
 
 .rw2{padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+
+:root{color-scheme:light only}
