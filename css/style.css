@@ -141,3 +141,5 @@ body.pm-open{overflow:hidden}.pm{position:fixed;inset:0;z-index:80;background:rg
 .from{font:400 12px Jost;color:var(--soft)}.pm-opt{margin:6px 0 14px}
 
 :root{color-scheme:light only}html,body{background:var(--bg);color:var(--ink)}
+
+.pm-box.na{animation:none}.pm-s{position:absolute;inset:0;transition:transform .45s cubic-bezier(.2,.8,.2,1);will-change:transform}.pm-a{z-index:2}
