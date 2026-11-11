@@ -14,6 +14,10 @@ git commit -m "Update from Claude"
 git push
 firebase deploy --only hosting
 if ($hasFn) {
+  Write-Host "Preparing the email functions..."
+  Push-Location functions
+  npm install
+  Pop-Location
   Write-Host "Publishing the email functions..."
   firebase deploy --only functions
 }
